@@ -40,13 +40,13 @@
     },
   ]
 
-  console.log(users);
-
-    const numberArray = users.filter(user => (user.isActive && user.balance>2000));
-  console.log(numberArray);
-
-  const phoneArray = numberArray.phone();
-  console.log(phoneArray);
+  const userNumbers = users
+      .filter((users) => users.balance > 2000 && users.isActive === true)
+      .map((users) => users.phone);
+  console.log(
+      "Active user numbers with a balance of more than 2000",
+      userNumbers
+  );
 
 
 
