@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let users = [
+    {
+      "isActive": true,
+      "balance": "226.60",
+      "name": "Eugenia Sawyer",
+      "phone": "+1 (840) 583-3207",
+    },
+    {
+      "isActive": true,
+      "balance": "2613.77",
+      "name": "Pauline Gallegos",
+      "phone": "+1 (985) 593-3328",
+    },
+    {
+      "isActive": false,
+      "balance": "3976.41",
+      "name": "Middleton Chaney",
+      "phone": "+1 (995) 591-2478",
+    },
+    {
+      "isActive": false,
+      "balance": "1934.58",
+      "name": "Burns Poole",
+      "phone": "+1 (885) 559-3422",
+    },
+    {
+      "isActive": true,
+      "balance": "3261.65",
+      "name": "Mcfadden Horne",
+      "gender": "male",
+      "phone": "+1 (942) 565-3988",
+    },
+  ]
+
+  console.log(users);
+
+    const numberArray = users.filter(user => (user.isActive && user.balance>2000));
+  console.log(numberArray);
+
+  const phoneArray = numberArray.phone();
+  console.log(phoneArray);
+
+
+
+
+
+
+
+
+  // function showNumber() {
+  //     users.filter(users.isActive)
+  //
+  //
+  //
+  //     if (users.filter(users.balance)>2000){
+  //
+  //         push(newArray)
+  //         console.log(newArray);
+  //     }
+  //     let newArray=[];
+  // }
+  // showNumber();
+
+
+  // function showNumber() {
+  //     if (users.isActive === true||users.balance>2000){
+  //         return (users.phone);
+  //     }
+  // }
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

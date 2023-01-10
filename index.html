@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function enterInfo() {
+        for (let i = 1; i <= 10; i++) {
+            let promptValue = prompt("Enter your number more than 100");
+            if (promptValue <= 100) {
+                if (i === 10) {
+                    console.log("Last entered value was:", promptValue);
+                    break;
+                }
+                alert("Enter number more than 100!");
+                continue;
+            }
+            console.log(promptValue);
+            break;
+        }
+    }
+    enterInfo();
+
+</script>
+
+</body>
+</html>
